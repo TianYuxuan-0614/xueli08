@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .box{
+            height: 60px;
+            font-size: 20px;
+            color: white;
+            line-height: 60px;
+            text-align: center;
+        }
+        #box1{
+            background-color: red;
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: black;
+           
+        }
+        #box4{
+            background-color:orange;
+        }
+        @media screen and (min-width:1200px) {
+            .box{
+                float: left;
+                width: 300px;
+            }
+            #all{
+                width: 1200px;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1200px){
+            #box1{
+                width: 996px;
+            }
+            #box2{
+                width: 332px;
+                float: left;
+            }
+            #box3{
+                width: 332px;
+                float: left;
+            }
+            #box4{
+                width: 332px;
+                float: left;
+            }
+            #all{
+                width: 996px;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (min-width:768px) and (max-width:992px){
+            #all{
+                width: 768px;
+                height: 120px;
+                margin: 0 auto;
+                position: relative;
+            }
+            #box1{
+                width: 384px;
+                position: absolute;
+                top:0;
+                left: 0;
+            }
+            #box2{
+                width: 384px;
+                position: absolute;
+                top:0;
+                left: 384px;
+            }
+            #box3{
+                width: 384px;
+                position: absolute;
+                top:60px;
+                left: 0;
+            }
+            #box4{
+                width: 384px;
+                position: absolute;
+                top:60px;
+                left: 384px;
+            }
+            
+        }
+        @media screen and (max-width:768px){
+            .box{
+                width: 600px;
+            }
+            #all{
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="all" >
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>
+    
+</body>
+</html>
